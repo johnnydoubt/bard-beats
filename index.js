@@ -4,14 +4,14 @@ const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
 const fs = require("fs")
 const { Player } = require("discord-player")
-
+// TODO: gérer ffmpeg
 dotenv.config()
 const TOKEN = process.env.TOKEN
 
 const LOAD_SLASH = process.argv[2] == "load"
 
-const CLIENT_ID = "924846888929337354"
-const GUILD_ID = "924832445050781766"
+const CLIENT_ID = "1021805431661809674"
+const GUILD_ID = "1021811510701477938"
 
 const client = new Discord.Client({
     intents: [
